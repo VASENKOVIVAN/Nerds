@@ -13,12 +13,12 @@
 
 
 
-	<header class="page-header">
+	<header class="main-header">
 		<div class="container">
-			
+			<h1 class="main-header__header_hidden">Математически выверенный дизайн для вашего сайта или приложения</h1>
 
-			<div class="page-header__top">
-				<a href="#" class="page-header__logo"><img src="assets/img/logo.png" alt="Nerd.com" ></a>
+			<div class="main-header__top">
+				<a href="#" class="main-header__logo"><img src="assets/img/logo.png" alt="Nerd logo" ></a>
 
 				<nav class="main-nav">
 					<ul class="main-nav__list">
@@ -26,16 +26,55 @@
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link main-nav__basket"></li>
 					</ul>
 				</nav>
 
-				<a href="#" class="page-header__basket">
+				<!-- <a href="#" class="page-header__basket">
 					<span class="page-header__basket-title">Корзина</span>
-				</a>
+				</a> -->
+				<!-- перенёс в nav -->
+
+
 			</div>
 
 
-			<div class="slider">
+			
+
+		</div>
+	</header>
+
+
+
+	<main>
+
+
+
+		<div class="slider">
+			<div class="container">
+				<ul class="slider__list">
+					<li class="slider__item">
+						<input type="radio" name="slide" id="slide1">
+						<label for="slide1"></label>
+						<div class="slider__messsage">
+							<h2 class="slider__message-header">Долго, дорого, скрупулезно.</h2>
+							<p class="slider__message-text">Математически выверенный дизайн
+							для вашего сайта или приложения</p>
+							<a href="#" class="slider__message-button">Узнать больше</a>
+						</div>
+					</li>
+					<li class="slider__item">
+						<input type="radio" name="slide" id="slide2">
+						<label for="slide2"></label>
+					</li>
+					<li class="slider__item">
+						<input type="radio" name="slide" id="slide3">
+						<label for="slide3"></label>
+					</li>
+				</ul>
+
+
+				<!-- <div class="slider">
 
 				<div class="slider__messsage">
 					<h1 class="slider__message-header">Долго, дорого, скрупулезно.</h1>
@@ -48,15 +87,9 @@
 				<input type="radio" name="slider-point" id="slide2">
 				<input type="radio" name="slider-point" id="slide3">
 
+				</div> -->
 			</div>
-
 		</div>
-	</header>
-
-
-
-	<main>
-
 
 		<section class="services">
 
