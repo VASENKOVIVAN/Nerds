@@ -13,17 +13,17 @@
 
 	<header class="main-header">`
 		<div class="container">
-			<h1 class="main-header__header_hidden">Nerds design studio - математически выверенный дизайн для вашего сайта или приложения</h1>
-
-			<a href="#" class="logo"><img src="assets/img/logo.png" alt="Nerd logo" ></a>
-
+			<h1 class="header-hidden">Nerds design studio - математически выверенный дизайн для вашего сайта или приложения</h1>
+		<!-- Логотип -->
+			<a href="#" class="logo"><img class="logo__img" src="assets/img/logo.png" alt="Nerd logo" ></a>
+		<!-- Меню -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item">Menu<a href="#" class="main-nav__link">Студия</a></li>
-					<li class="main-nav__item">Menu<a href="#" class="main-nav__link">Магазин</a></li>
-					<li class="main-nav__item">Menu<a href="#" class="main-nav__link">Клиенты</a></li>
-					<li class="main-nav__item">Menu<a href="#" class="main-nav__link">Контакты</a></li>
-					<li class="main-nav__item">Menu<a href="#" class="main-nav__link main-nav__link_basket">Корзина</li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Студия</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_basket">Корзина</a></li>
 				</ul>
 			</nav>
 
@@ -35,106 +35,109 @@
 	</header>
 
 
-	<main>
-	<section class="section section_accent">
-		<div class="container">
+		<main>
+			<section class="section section_accent">
+				<div class="container">
+					<!-- Слайдер -->
+					<div class="slider">
+						<!-- Слайды -->
+						<ul class="slider__slides">
+							<li class="slider__slide slide">
+								<h2 class="slide__header">Долго, дорого, скрупулёзно</h2>
+								<p class="slide__description page-p">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+								<a href="#" class="slide__button button">Узнать больше</a>
+							</li>
+							<!-- <li class="slider__slide slide">
+								<h2 class="slide__header">Header header header</h2>
+								<p class="slide__description page-p">Description description description description</p>
+								<a href="#" class="slide__button button">Button</a>
+							</li>
+							<li class="slider__slide slide">
+								<h2 class="slide__header">Header header header</h2>
+								<p class="slide__description page-p">Description description description description</p>
+								<a href="#" class="slide__button button">Button</a>
+							</li> -->
+						</ul>
+						<!-- Переключатели -->
+						<ul class="slider__controls">
+							<li class="slider__control">
+								<input type="radio" name="slide" id="slide1" checked>
+								<label for="slide1">1</label>
+							</li>
+							<li class="slider__control">
+								<input type="radio" name="slide" id="slide2">
+								<label for="slide2">2</label>
+							</li>
+							<li class="slider__control">
+								<input type="radio" name="slide" id="slide3">
+								<label for="slide3">3</label>
+							</li>
+						</ul>
 
-			<div class="slider">
-				<ul class="slider__slides">
-					<li class="slider__slide slide">
-						<h2 class="slide__header">Header header header</h2>
-						<p class="slide__description page-p">Description description description description</p>
-						<a href="#" class="slide__button button">Button</a>
-					</li>
-					<li class="slider__slide slide">
-						<h2 class="slide__header">Header header header</h2>
-						<p class="slide__description page-p">Description description description description</p>
-						<a href="#" class="slide__button button">Button</a>
-					</li>
-					<li class="slider__slide slide">
-						<h2 class="slide__header">Header header header</h2>
-						<p class="slide__description page-p">Description description description description</p>
-						<a href="#" class="slide__button button">Button</a>
-					</li>
-				</ul>
+					</div>	
 
-				<ul class="slider__controls">
-					<li class="slider__control">
-						<input type="radio" name="slide" id="slide1" checked>
-						<label for="slide1">1</label>
-					</li>
-					<li class="slider__control">
-						<input type="radio" name="slide" id="slide2">
-						<label for="slide2">2</label>
-					</li>
-					<li class="slider__control">
-						<input type="radio" name="slide" id="slide3">
-						<label for="slide3">3</label>
-					</li>
-				</ul>
-
-			</div>	
-
-		</div>
-	</section>
-
-
-	<section class="section">
-		<div class="container">
-			<section class="services-item">
-				<img class="services-item__img" src="" alt="icon">
-				<h2 class="services-item__header">header</h2>
-				<p class="services-item__description page-p">description description</p>
-				<a class="services-item__button button" href="#">button</a>
+				</div>
 			</section>
-			<section class="services-item">
-				<img class="services-item__img" src="" alt="icon">
-				<h2 class="services-item__header">header</h2>
-				<p class="services-item__description page-p">description description</p>
-				<a class="services-item__button button" href="#">button</a>
+
+
+			<section class="section services">
+				<div class="container">
+					<!-- Услуги -->
+					<h2 class="header-hidden">Наши услуги</h2>
+					<section class="services-item">
+						<img class="services-item__img" src="" alt="icon">
+						<h3 class="services-item__header">Веб-сайты</h2>
+						<p class="services-item__description page-p">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<a class="services-item__button button" href="#">Заказать</a>
+					</section>
+					<section class="services-item">
+						<img class="services-item__img" src="" alt="icon">
+						<h3 class="services-item__header">Приложения</h2>
+						<p class="services-item__description page-p">Покорите топ-10 прилодений в AppStore и Google Play</p>
+						<a class="services-item__button button" href="#">Заказать</a>
+					</section>
+					<section class="services-item">
+						<img  class="services-item__img"src="" alt="icon">
+						<h3 class="services-item__header">Презентации</h2>
+						<p class="services-item__description page-p">Вы даже не подозреваете, насколько вы изумительны</p>
+						<a class="services-item__button button" href="#">Заказать</a>
+					</section>
+				</div>
 			</section>
-			<section class="services-item">
-				<img  class="services-item__img"src="" alt="icon">
-				<h2 class="services-item__header">header</h2>
-				<p class="services-item__description page-p">description description</p>
-				<a class="services-item__button button" href="#">button</a>
-			</section>
-		</div>
-	</section>
 
 
-	<section class="section">
-		<div class="container">
+			<section class="section about-us">
+				<div class="container">
+					<!-- О нас -->
+					<div class="about-us__block ihfo">
+						<h2 class="info__header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+						<p class="info__p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+						<span class="info__list-header">Выполняем заказы на разработку:</span>
+						<ul class="info__list">
+							<li class="info__list-item">Веб-сайтов любой сложности</li>
+							<li class="info__list-item">Мобильных приложений для IOS и Android</li>
+							<li class="info__list-item">Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</div>
 
-			<div class="about-us">
-				<h2 class="about-us__header">Header header</h2>
-				<p class="about-us__p page-p">Description description</p>
-				<h3 class="about-us__list-header">List header</h3>
-				<ul class="about-us__list">
-					<li class="about-us__list-item">lorem ipsum dolor</li>
-					<li class="about-us__list-item">lorem ipsum dolor</li>
-					<li class="about-us__list-item">lorem ipsum dolor</li>
-				</ul>
-			</div>
+					<section class="about-us__block statistics">
+						<img src="" alt="Nerd logo" class="statistics__logo">
+						<span class="statistics_header">С 2004 года любим точность во всем:</span>
 
-			<section class="statistics">
-				<img src="" alt="Nerd logo" class="statistics__logo">
-				<h3 class="statistics_header">Header Header</h5>
-
-					<ul class="statistics__list">
-						<li class="statistics__item">
-							<span class="statistics__item-header"></span>
-							<p class="statistics__item-p page-p"></p>
-						</li>
-						<li class="statistics__item">
-							<span class="statistics__item-header"></span>
-							<p class="statistics__item-p page-p"></p>
-						</li>
-						<li class="statistics__item">
-							<span class="statistics__item-header"></span>
-							<p class="statistics__item-p page-p"></p>
-						</li>
-					</ul>
+							<ul class="statistics__list">
+								<li class="statistics__item">
+									<span class="statistics__percent">146%</span>
+									<p class="statistics__item-p">Уровень самоотдачи</p>
+								</li>
+								<li class="statistics__item">
+									<span class="statistics__percent">100%</span>
+									<p class="statistics__item-p">Соблюдение сроков</p>
+								</li>
+								<li class="statistics__item">
+									<span class="statistics__percent">50%</span>
+									<p class="statistics__item-p">Минимальная предоплата</p>
+								</li>
+							</ul>
 
 				<!-- <div class="statistics-item">
 					<span class="statistics-item__header">140%</span>
@@ -158,18 +161,28 @@
 
 	<section class="clients">
 		<div class="container">
+			<!-- клиенты -->
+			<h2 class="header-hidden">Наши клиенты</h2>
 			<ul class="clients-list">
 				<li class="clients-list__item">
-					<a href="#" class="clients-list__link">example-logo</a>
+					<a href="#" class="clients-list__link">
+						<img class="clients-list__img" src="" alt="HTML Academy">
+					</a>
 				</li>
 				<li class="clients-list__item">
-					<a href="#" class="clients-list__link">example-logo</a>
+					<a href="#" class="clients-list__link">
+						<img class="clients-list__img" src="" alt="Borodinski">
+					</a>
 				</li>
 				<li class="clients-list__item">
-					<a href="#" class="clients-list__link">example-logo</a>
+					<a href="#" class="clients-list__link">
+						<img class="clients-list__img" src="" alt="Pink">
+					</a>
 				</li>
 				<li class="clients-list__item">
-					<a href="#" class="clients-list__link">example-logo</a>
+					<a href="#" class="clients-list__link">
+						<img class="clients-list__img" src="" alt="Mishka">
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -178,7 +191,7 @@
 </main>
 
 
-<footer>
+<footer class="main-footer">
 
 </footer>
 
