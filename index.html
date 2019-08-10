@@ -11,40 +11,32 @@
 	</script>
 
 
-	<header class="main-header">`
+	<header class="main-header">
 		<div class="container">
 
 			<h1 class="hidden">Nerds design studio - математически выверенный дизайн для вашего сайта или приложения</h1>
 			<!-- Меню -->
 			<nav class="main-nav">
 				<!-- Логотип -->
-				<a href="#" class="logo"><img class="logo__img" src="assets/img/logo.png" alt="Nerd logo" ></a>
+				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="assets/img/logo.png" alt="Nerd logo" ></a>
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Студия</a></li>
+					<li class="main-nav__item main-nav__item_studio"><a href="#" class="main-nav__link">Студия</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_basket">Корзина</a></li>
+					<li class="main-nav__item main-nav__item_basket"><a href="#" class="main-nav__link main-nav__link_basket">Корзина</a></li>
 				</ul>
 			</nav>
 
-		</div>
-	</header>
 
-
-	<main>
-
-
-		<section class="section section_accent">
-			<div class="container">
-
-				<!-- Слайдер -->
-				<div class="slider">
+			<div class="slider">
 					<!-- Слайды -->
 					<ul class="slider__slides">
-						<li class="slider__slide slide">
-							<h2 class="slide__header">Долго, дорого, скрупулёзно</h2>
-							<p class="slide__description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<li class="slider__slide slide slide_active">
+							<h2 class="slide__header">Долго, дорого,<br/>
+								скрупулёзно</h2>
+							<p class="slide__description">Математически выверенный дизайн<br/>
+								для вашего сайта или мобильного приложения</p>
 							<a href="#" class="slide__button button button_alert">Узнать больше</a>
 						</li>
 
@@ -79,14 +71,14 @@
 					</ul>
 				</div>	
 
-			</div>
-		</section>
+		</div>
+	</header>
 
 
-
-
-		<section class="section services">
-			<div class="container">
+	<main>
+		
+		<div class="container">
+			<section class="section services">
 
 				<!-- Услуги -->
 				<h2 class="hidden">Наши услуги</h2>
@@ -111,19 +103,18 @@
 						<a class="services-item__button button button_accent" href="#">Заказать</a>
 				</section>
 
-			</div>
-		</section>
-
+			</section>
+	
 
 
 
 		<section class="section about-us">
-			<div class="container">
 
 				<!-- О нас -->
 				<div class="about-us__block ihfo">
 					<h2 class="info__header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-					<p class="info__p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+					<p class="info__p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. 
+						Работаем не покладая рук, как роботы</p>
 					<p class="info__list-header">Выполняем заказы на разработку:</p>
 					<ul class="info__services list">
 						<li class="info__service list__item">Веб-сайтов любой сложности</li>
@@ -133,7 +124,7 @@
 				</div>
 
 				<!-- Статистика -->
-				<section class="about-us__block statistics">
+				<div class="about-us__block about-us__block_statistics statistics">
 					<img src="" alt="Nerd logo" class="statistics__logo">
 					<p class="statistics__header">С 2004 года любим точность во всем:</p>
 
@@ -151,12 +142,11 @@
 							<p class="statistics__item-p">Минимальная предоплата</p>
 						</li>
 					</ul>
-				</section>
+				</div>
 
-			</div>
 		</section>
 	
-
+		</div>
 
 
 		<section class="section clients">
@@ -189,7 +179,7 @@
 
 			</div>
 		</section>
-</main>
+	</main>
 
 
 <footer class="main-footer footer">
