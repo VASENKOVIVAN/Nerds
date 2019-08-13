@@ -10,9 +10,15 @@ body {
    color: #000;
 }
 
+ul {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
 
 .container {
-   max-width: 1160px;
+   max-width: 1200px;
    margin: 0 auto;
 }
 
@@ -29,7 +35,7 @@ body {
 
 .main-header {
    background-color: #eee;
-   padding-top: 40px;
+   padding-top: 45px;
 }
 
 /*--Menu--*/
@@ -38,6 +44,7 @@ body {
    display: flex;
    align-items: center;
    box-sizing: border-box;
+   padding: 0  0 0 20px;
 }
 
 .main-nav__logo {
@@ -51,7 +58,7 @@ body {
    width: 100%;
    list-style-type: none;
    margin: 0;
-   padding: 0;
+   padding: 20px;
 }
 
 .main-nav__item {
@@ -73,13 +80,11 @@ body {
 }
 
 .main-nav__link_basket {
-   padding-right: 0;
 }
 
 /*--Слайдер--*/
-
+ 
 .slider {
-   padding: 80px 0;
 }
 
 .slider__slides {
@@ -88,16 +93,17 @@ body {
    list-style-type: none;
 }
 
-.slider__controls {
-   display: flex;
-   align-items: center;
-   list-style-type: none;
-   position: absolute;
-   padding: 0;
-}
-
 .slide {
    display: none;
+   padding: 80px 20px;
+   height: 420px;
+   box-sizing: border-box;
+}
+
+.slide__header {
+   margin: 0;
+   padding: 0;
+   font-size: 55px;
 }
 
 .slide_active {
@@ -107,26 +113,142 @@ body {
 
 /*---Услуги---*/
 
-.services {
-   padding: 80px 0;
+ .services {
    display: flex;
-   justify-content: center;
    align-items: center;
+   justify-content: space-between;
+}
+
+.services__item {
 }
 
 .services-item {
-   display: flex;
-   flex-direction: column;
-   width: 300px;
-   box-sizing: border-box;
+   padding: 20px;
+   flex-basis: 300px;
 }
 
+/*---- О нас ----*/
 
 .about-us {
    display: flex;
-   padding: 80px 0 75px 0;
+   padding: 20px;
+   justify-content: space-between;
 }
 
-.about-us__block_statistics {
+.info {
+   flex-basis: 660px;
+}
+
+.statistics {
    width: 360px;
+   display: flex;
+   flex-direction: column;
+}
+
+.statistics__list {
+   display: flex;
+}
+
+
+/*---- Клиенты ----*/
+
+.clients {
+}
+
+.clients__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+}
+
+.clients__item {
+   padding: 20px;
+   width: 25%;
+   box-sizing: border-box;
+}
+
+/*---- Карта ----*/
+
+.location {
+   padding-top: 80px;
+}
+
+.map {
+   height: 415px;
+   background-image: url(../assets/img/map-1.png);
+}
+
+.map__content {
+   position: relative;
+   height: 100%;
+}
+
+/*---- adress card ----*/
+
+.map__adress-card {
+   position: absolute;
+   left: 20px;
+   top: 60px;
+}
+
+.adress-card {
+   width: 320px;
+   height: 300px;
+   padding: 45px 50px;
+   box-sizing: border-box;
+   background-color: #fff;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+.adress-card__adress {
+   margin-top: auto;
+}
+
+.adress-card__button {
+   margin-top: auto;
+}
+
+/*---- Контакты ----*/
+.contacts {
+   display: flex;
+   padding: 20px;
+}
+
+/*---- Социальные кнопки ----*/
+
+.socials {
+   display: flex;
+}
+
+.socials__item {
+   font-size: 0;
+   margin-right: 10px;
+}
+
+.socials__link {
+   display: inline-block;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #e1e1e1;
+   padding: 0;
+   margin: 0;
+}
+
+/*---- Promo ----*/
+
+.contacts__promo {
+   margin: 0 auto;
+}
+
+.promo {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }

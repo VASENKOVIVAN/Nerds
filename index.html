@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8" lang="ru">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nerd</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -18,7 +19,7 @@
 			<!-- Меню -->
 			<nav class="main-nav">
 				<!-- Логотип -->
-				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="assets/img/logo.png" alt="Nerd logo" ></a>
+				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="../assets/img/logo.png" alt="Nerd logo" ></a>
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item_studio"><a href="#" class="main-nav__link">Студия</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
@@ -82,21 +83,21 @@
 
 				<!-- Услуги -->
 				<h2 class="hidden">Наши услуги</h2>
-				<section class="services-item">
+				<section class="services__item services-item">
 					<img class="services-item__img" src="" alt="icon">
 					<h3 class="services-item__header">Веб-сайты</h3>
 					<p class="services-item__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<a class="services-item__button button button_alert" href="#">Заказать</a>
 				</section>
 
-				<section class="services-item">
+				<section class="services__item services-item">
 					<img class="services-item__img" src="" alt="icon">
 					<h3 class="services-item__header">Приложения</h3>
 					<p class="services-item__description">Покорите топ-10 прилодений в AppStore и Google Play</p>
 					<a class="services-item__button button button_primary" href="#">Заказать</a>
 				</section>
 
-				<section class="services-item">
+				<section class="services__item services-item">
 					<img  class="services-item__img"src="" alt="icon">
 					<h3 class="services-item__header">Презентации</h3>
 						<p class="services-item__description">Вы даже не подозреваете, насколько вы изумительны</p>
@@ -111,7 +112,7 @@
 		<section class="section about-us">
 
 				<!-- О нас -->
-				<div class="about-us__block ihfo">
+				<div class="about-us__block info">
 					<h2 class="info__header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
 					<p class="info__p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. 
 						Работаем не покладая рук, как роботы</p>
@@ -124,7 +125,7 @@
 				</div>
 
 				<!-- Статистика -->
-				<div class="about-us__block about-us__block_statistics statistics">
+				<div class="about-us__block statistics">
 					<img src="" alt="Nerd logo" class="statistics__logo">
 					<p class="statistics__header">С 2004 года любим точность во всем:</p>
 
@@ -146,12 +147,8 @@
 
 		</section>
 	
-		</div>
-
-
-		<section class="section clients">
-			<div class="container">
-
+		
+<section class="section clients">
 				<!-- клиенты -->
 				<h2 class="hidden">Наши клиенты</h2>
 				<ul class="clients__list">
@@ -176,9 +173,9 @@
 						</a>
 					</li>
 				</ul>
-
+	</section>
 			</div>
-		</section>
+	
 	</main>
 
 
@@ -188,7 +185,7 @@
 	<section class="section location">
 		<h2 class="hidden">Где нас искать?</h2>
 		<div class="map">
-		<div class="contaier">
+		<div class="map__content container">
 			<div class="map__adress-card adress-card">
 				<h3 class="adress-card__title">Nёrds design studio</h3>
 				<adress class="adress-card__adress">191186, Санкт-Петербург, <br/> ул. Б. Конюшенная, д. 19/8</adress>
@@ -197,15 +194,15 @@
 						+7 (812) 275-75-75
 					</a>
 				</p>
-				<a class="button button_alert" href="mailto:">Напишите нам</a>
+				<a class="adress-card__button button button_alert" href="mailto:">Напишите нам</a>
 			</div>
 		</div>
 		</div>
 	</section>
 	
 	<!--Контакты-->
-	<section class="section contacts">
 		<div class="container">
+	<section class="section contacts">
 			<h2 class="hidden">Мы в соцсетях</h2>
 			<ul class="contacts__socials socials">
 				<li class="socials__item"><a href="#" class="socials__link social__link_vk">Вконтакте</a></li>
@@ -216,9 +213,9 @@
 				<span class="promo__title">Давайте дружить, это выгодно!</span><br/>
 				Скидка 10% для друзей из социальных сетей
 			</p>
-		</div>
+	
 	</section>
-
+	</div>
 </footer>
 
 
