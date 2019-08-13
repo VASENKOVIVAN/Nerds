@@ -4,10 +4,35 @@
 
 /*--Общие стили--*/
 
+@font-face {
+   font-family: "Roboto";
+   src: url(assets/fonts/roboto.woff) format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "RobotoBold";
+   src: url(assets/fonts/robotobold.woff) format("woff"),
+        url(assets/fonts/robotobold.woff2) format("woff2");
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "RobotoMedium";
+   src: url(assets/fonts/robotomedium.woff) format("woff"),
+        url(assets/fonts/robotomedium.woff2) format("woff2");
+   font-weight: 600;
+   font-style: normal;
+}
+
+
 body {
    margin: 0;
    padding: 0;
    color: #000;
+   font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -76,6 +101,8 @@ ul {
 .main-nav__link {
    text-decoration: none;
    color: inherit;
+   font-family: "RobotoMedium", sans-serif;
+   color: #3f3f3f;
    padding: 0 5px;
 }
 
@@ -103,7 +130,11 @@ ul {
 .slide__header {
    margin: 0;
    padding: 0;
+   font-family: "RobotoMedium", sans-serif;
    font-size: 55px;
+}
+
+.slide__description {
 }
 
 .slide_active {
@@ -117,6 +148,7 @@ ul {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   padding: 80px 0;
 }
 
 .services__item {
@@ -127,11 +159,12 @@ ul {
    flex-basis: 300px;
 }
 
+
 /*---- О нас ----*/
 
 .about-us {
    display: flex;
-   padding: 20px;
+   padding: 80px 20px;
    justify-content: space-between;
 }
 
