@@ -1,3 +1,3 @@
 # Nerds
-Макеты на HTML &amp; CSS Level1
+Макеты на HTML &amp; CSS Level
 https://senior-pomidor.github.io/LearnLayout/

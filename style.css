@@ -1,6 +1,6 @@
-* {
+/* * {
    border: 1px solid black;
-}
+} */
 
 /*--Общие стили--*/
 
@@ -76,6 +76,17 @@ ul {
    flex-shrink: 0;
 }
 
+.logo__img {
+   width: 160px;
+   height: 65px;
+}
+
+
+
+
+
+
+
 .main-nav__list {
    display: flex;
    justify-content: center;
@@ -83,11 +94,13 @@ ul {
    width: 100%;
    list-style-type: none;
    margin: 0;
-   padding: 20px;
+   padding: 0 20px;
 }
 
 .main-nav__item {
    margin-right: 35px;
+   display: flex;
+   align-items: center;
 }
 
 .main-nav__item_studio {
@@ -103,11 +116,21 @@ ul {
    color: inherit;
    font-family: "RobotoMedium", sans-serif;
    color: #3f3f3f;
-   padding: 0 5px;
+   text-transform: uppercase;
+   padding: 10px 5px;
 }
 
 .main-nav__link_basket {
+   padding-left: 40px;
+   background: url("assets/img/basket.png") no-repeat 10px center;
 }
+
+
+
+
+
+
+
 
 /*--Слайдер--*/
  
@@ -127,19 +150,49 @@ ul {
    box-sizing: border-box;
 }
 
+.slide_active {
+   display: block;
+}
+
+.slide:first-child {
+   background: url("assets/img/slide1.png") no-repeat right bottom;
+}
+
 .slide__header {
    margin: 0;
+   margin-bottom: 25px;
    padding: 0;
    font-family: "RobotoMedium", sans-serif;
    font-size: 55px;
 }
 
 .slide__description {
+   margin: 0;
+   margin-bottom: 40px;
 }
 
-.slide_active {
-   display: block;
+.slide__button {
+   width: 240px;
 }
+
+.button {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   height: 50px;
+   padding: 0 40px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+   border-radius: 3px;
+}
+
+.button_alert {
+   background-color: #fb565a;
+}
+
+
 
 
 /*---Услуги---*/
@@ -155,11 +208,43 @@ ul {
 }
 
 .services-item {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   box-sizing: border-box;
    padding: 20px;
    flex-basis: 300px;
+   min-height: 390px;
+}
+
+.services-item__img {
+   width: 100%;
+}
+
+.services-item__header {
+   text-transform: uppercase;
+   font-size: 24px;
+   margin: 0;
+   margin-top: 25px;
 }
 
 
+.services-item__description {
+   margin: 0;
+   margin-top: 20px;
+}
+
+.services-item__button {
+   margin-top: auto;
+}
+
+.button_primary {
+   background-color: #00ca74;
+}
+
+.button_accent {
+   background-color: #efc849;
+}
 /*---- О нас ----*/
 
 .about-us {
