@@ -31,8 +31,9 @@
 body {
    margin: 0;
    padding: 0;
-   color: #000;
+   color: #202020;
    font-family: "Roboto", sans-serif;
+   font-size: 16px;
 }
 
 ul {
@@ -49,6 +50,7 @@ ul {
 
 .section {
    box-sizing: border-box;
+   border-bottom: 2px solid #eeeeee;
 }
 
 .hidden {
@@ -164,6 +166,7 @@ ul {
    padding: 0;
    font-family: "RobotoMedium", sans-serif;
    font-size: 55px;
+   line-height: 55px;
 }
 
 .slide__description {
@@ -257,14 +260,72 @@ ul {
    flex-basis: 660px;
 }
 
+.info__header {
+   font-size: 45px;
+   line-height: 45px;
+   margin: 0;
+   padding: 0;
+}
+
+.info__p {
+   line-height: 24px;
+   margin-top: 25px;
+}
+
+.info__list-header {
+   text-transform: uppercase;
+   font-family: "RobotoBold";
+   margin-top: 45px;
+}
+
+.info__service {
+   padding-left: 35px;
+   background: url("assets/img/li.png") no-repeat left center;
+   margin-top: 30px;
+}
+
+
+
+
+
+
+
 .statistics {
-   width: 360px;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
+   flex-basis: 360px;
+   height: 410px;
+}
+
+.statistics__header {
+   text-transform: uppercase;
+   font-family: "RobotoBold";
+   text-align: center;
+   font-size: 16px;
+   line-height: 24px;
+   margin-top: 30px;
 }
 
 .statistics__list {
    display: flex;
+   justify-content: space-between;
+   align-items: space-between;
+}
+
+.statistics__item {
+   width: calc(100%/3);
+}
+
+.statistics__percent {
+   font-size: 45px;
+   color: #000;
+   font-family: "RobotoBold";
+   margin: 0;
+}
+
+.statistics__item-p {
+   margin: 15px 0 0;
 }
 
 
@@ -276,7 +337,7 @@ ul {
 .clients__list {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    margin: 0;
    padding: 0;
 }
@@ -285,6 +346,7 @@ ul {
    padding: 20px;
    width: 25%;
    box-sizing: border-box;
+   text-align: center;
 }
 
 /*---- Карта ----*/
