@@ -421,7 +421,7 @@ hr {
 
 .map {
    height: 415px;
-   background-image: url(Assets/img/map-1.png);
+   background-image: url(assets/img/map-1.png);
 }
 
 .map__content {
