@@ -19,7 +19,7 @@
 			<!-- Меню -->
 			<nav class="main-nav">
 				<!-- Логотип -->
-				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="../assets/img/logo.png" alt="Nerd logo" ></a>
+				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="../assets/img/nerds-logo.png" alt="Nerds logo" ></a>
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item_studio"><a href="#" class="main-nav__link">Студия</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
@@ -29,9 +29,19 @@
 				</ul>
 			</nav>
 
-
+		<!-- Слайдер -->
 			<div class="slider">
+					<input class="slider__radio" type="radio" name="slide" id="slide1" checked>
+					<input class="slider__radio" type="radio" name="slide" id="slide2">
+					<input class="slider__radio" type="radio" name="slide" id="slide3">
+	<!-- Переключатели -->
+					<div class="slider__controls">
+							<label class="slider__label" for="slide1"></label>	
+							<label class="slider__label" for="slide2"></label>
+							<label class="slider__label" for="slide3"></label>
+					</div>
 					<!-- Слайды -->
+					<div class="slider__inner">
 					<ul class="slider__slides">
 						<li class="slider__slide slide slide_active">
 							<h2 class="slide__header">Долго, дорого,<br/>
@@ -43,33 +53,23 @@
 
 						<!--Слайд-->
 						<li class="slider__slide slide">
-							<h2 class="slide__header">Header header header</h2>
-							<p class="slide__description page-p">Description description description description</p>
-							<a href="#" class="slide__button button button_alert">Button</a>
+							<h2 class="slide__header">Любим математику<br/>
+								как никто другой</h2>
+							<p class="slide__description">Никакого креатива, только математические формулы<br/>
+								для расчета идеальных пропорций</p>
+							<a href="#" class="slide__button button button_alert">Узнать больше</a>
 						</li>
 
 						<!--Слайд-->
 						<li class="slider__slide slide">
-							<h2 class="slide__header">Header header header</h2>
-							<p class="slide__description page-p">Description description description description</p>
-							<a href="#" class="slide__button button button_alert">Button</a>
+							<h2 class="slide__header">Только ночь,<br/>
+								только хардкор</h2>
+							<p class="slide__description">Работать днем, как все? Мы против этого.<br/>
+								Ближе к полуночи работa только начинается</p>
+							<a href="#" class="slide__button button button_alert">Узнать больше</a>
 						</li>
 					</ul>
-					<!-- Переключатели -->
-					<ul class="slider__controls">
-						<li class="slider__control">
-							<input type="radio" name="slide" id="slide1" checked>
-							<label for="slide1">1</label>
-						</li>
-						<li class="slider__control">
-							<input type="radio" name="slide" id="slide2">
-							<label for="slide2">2</label>
-						</li>
-						<li class="slider__control">
-							<input type="radio" name="slide" id="slide3">
-							<label for="slide3">3</label>
-						</li>
-					</ul>
+					</div>
 				</div>	
 
 		</div>
@@ -83,6 +83,7 @@
 
 				<!-- Услуги -->
 				<h2 class="hidden">Наши услуги</h2>
+				
 				<div class="services__item services-item">
 					<img class="services-item__img" src="assets/img/posibility1.jpg" alt="icon">
 					<h3 class="services-item__header">Веб-сайты</h3>
@@ -103,8 +104,8 @@
 						<p class="services-item__description">Вы даже не подозреваете, насколько вы изумительны</p>
 						<a class="services-item__button button button_accent" href="#">Заказать</a>
 				</div>
-
 			</section>
+			<hr/>
 	
 
 
@@ -146,6 +147,7 @@
 				</div>
 
 		</section>
+		<hr/>
 	
 		
 <section class="section clients">
@@ -174,6 +176,7 @@
 					</li>
 				</ul>
 	</section>
+	<hr/>
 			</div>
 	
 	</main>
@@ -205,9 +208,9 @@
 	<section class="section contacts">
 			<h2 class="hidden">Мы в соцсетях</h2>
 			<ul class="contacts__socials socials">
-				<li class="socials__item"><a href="#" class="socials__link social__link_vk">Вконтакте</a></li>
-				<li class="socials__item"><a href="#" class="socials__link social__link_vk">Фейсбук</a></li>
-				<li class="socials__item"><a href="#" class="socials__link social__link_vk">Инстаграм</a></li>
+				<li class="socials__item"><a href="#" class="socials__link social__link_k">Вкотакте</a></li>
+				<li class="socials__item"><a href="#" class="socials__link social__link_k">Фейсук</a></li>
+				<li class="socials__item"><a href="#" class="socials__link social__link_k">стаграм</a></li>
 			</ul>
 			<p class="contacts__promo promo">
 				<span class="promo__title">Давайте дружить, это выгодно!</span><br/>
