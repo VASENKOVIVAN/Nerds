@@ -466,23 +466,36 @@ hr {
 
 /*---- Социальные кнопки ----*/
 
-.socials {
+.socialss {
    display: flex;
 }
 
-.socials__item {
+.socialss__item {
    font-size: 0px;
    margin-right: 10px;
 }
 
-.socials__link {
+.socialss__link {
    display: inline-block;
-   width: 80px;
-   height: 80px;
+   width: 75px;
+   height: 75px;
    background-color: #eee;
+   background-image: url("assets/img/sociall-sprite.png");
    border-radius: 50%;
    padding: 0;
    margin: 0;
+}
+
+.sociall__link_vk {
+   background-position: 50% 65px;
+}
+
+.sociall__link_fb {
+   background-position: 120% 5px;
+}
+
+.sociall__link_ig {
+   background-position: 80% 123px;
 }
 
 /*---- Promo ----*/
