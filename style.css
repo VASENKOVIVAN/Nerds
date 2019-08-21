@@ -1,6 +1,6 @@
-/* * {
+* {
    border: 1px solid black;
-} */
+}
 
 /*--Общие стили--*/
 
@@ -45,10 +45,11 @@ ul {
 }
 
 hr {
-   width: 97%;
+   width: 96%;
    height: 3px;
    background: #eee;
    border: none;
+   margin: 0 auto;
 }
 
 .container {
@@ -118,10 +119,11 @@ hr {
 .main-nav__link {
    text-decoration: none;
    color: inherit;
+   line-height: 30px;
    font-weight: 500;
    color: #3f3f3f;
    text-transform: uppercase;
-   padding: 10px 5px;
+   padding: 5px;
 }
 
 .main-nav__link_basket {
@@ -262,13 +264,14 @@ hr {
 /*---Услуги---*/
 
  .services {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
    padding: 80px 0;
 }
 
-.services__item {
+.services__list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1140px;
 }
 
 .services-item {
@@ -277,8 +280,11 @@ hr {
    align-items: flex-start;
    box-sizing: border-box;
    padding: 20px;
-   flex-basis: 300px;
+   max-width: 340px;
    min-height: 390px;
+}
+
+.services__item {
 }
 
 .services-item__img {
@@ -315,10 +321,15 @@ hr {
    display: flex;
    padding: 80px 20px;
    justify-content: space-between;
+   align-items: flex-start;
+}
+
+.about-us__block {
 }
 
 .info {
-   flex-basis: 660px;
+   box-sizing: border-box;
+   flex-basis: 680px;
 }
 
 .info__header {
@@ -335,8 +346,9 @@ hr {
 
 .info__list-header {
    text-transform: uppercase;
-   font-family: "Roboto";
+   font-weight: 600;
    margin-top: 45px;
+   margin-bottom: 0;
 }
 
 .info__service {
@@ -356,7 +368,7 @@ hr {
    flex-direction: column;
    justify-content: space-between;
    flex-basis: 360px;
-   height: 410px;
+   min-height: 410px;
 }
 
 .statistics__header {
@@ -508,4 +520,12 @@ hr {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   font-size: 16px;
+   line-height: 22px;
+}
+
+.promo__title {
+   font-size: 36px;
+   line-height: 36px;
+   font-weight: bold;
 }
