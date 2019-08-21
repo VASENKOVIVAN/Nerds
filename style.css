@@ -466,6 +466,11 @@ hr {
    margin-top: auto;
 }
 
+.adress-card__tel-link {
+   text-decoration: none;
+   color: inherit;
+}
+
 .adress-card__button {
    margin-top: auto;
 }
@@ -473,7 +478,7 @@ hr {
 /*---- Контакты ----*/
 .contacts {
    display: flex;
-   padding: 20px;
+   padding: 70px 20px;
 }
 
 /*---- Социальные кнопки ----*/
@@ -520,12 +525,10 @@ hr {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   font-size: 16px;
    line-height: 22px;
 }
 
 .promo__title {
    font-size: 36px;
-   line-height: 36px;
    font-weight: bold;
 }
