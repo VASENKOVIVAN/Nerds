@@ -1,6 +1,6 @@
-* {
+/* * {
    border: 1px solid black;
-}
+} */
 
 /*--Общие стили--*/
 
@@ -103,7 +103,7 @@ hr {
 }
 
 .main-nav__item {
-   margin-right: 35px;
+   margin-right: 45px;
    display: flex;
    align-items: center;
 }
@@ -121,7 +121,7 @@ hr {
    color: inherit;
    line-height: 30px;
    font-weight: 500;
-   color: #3f3f3f;
+   color: #000;
    text-transform: uppercase;
    padding: 5px;
 }
