@@ -91,6 +91,13 @@ hr {
    height: 65px;
 }
 
+.logo__img:hover {
+   opacity: 0.8;
+}
+
+.logo__img:active {
+   opacity: 0.3;
+}
 
 .main-nav__list {
    display: flex;
@@ -124,6 +131,18 @@ hr {
    color: #000;
    text-transform: uppercase;
    padding: 5px;
+}
+
+.main-nav__link:hover {
+   color: #fb565a;
+}
+
+.main-nav__link:active {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__link_active {
+   border-bottom: 2px solid #fb565a;
 }
 
 .main-nav__link_basket {
@@ -258,6 +277,14 @@ hr {
    background-color: #fb565a;
 }
 
+.button_alert:hover {
+   background-color: #e74246;
+}
+
+.button_alert:active {
+   background-color: #d7373b;
+   color: rgba(255, 255, 255, 0.3);
+}
 
 
 
@@ -312,8 +339,25 @@ hr {
    background-color: #00ca74;
 }
 
+.button_primary:hover {
+   background-color: #00bc6c;
+}
+
+.button_primary:active {
+   background-color: #00aa62;
+   color: rgba(255, 255, 255, 0.3);
+}
+
 .button_accent {
    background-color: #efc849;
+}
+.button_accent:hover {
+   background-color: #eab534;
+}
+
+.button_accent:active {
+   background-color: #e5a722;
+   color: rgba(255, 255, 255, 0.3);
 }
 /*---- О нас ----*/
 
@@ -425,6 +469,14 @@ hr {
    text-align: center;
 }
 
+.clients__link:hover {
+   opacity: 0.2;
+}
+
+.clients__link:active {
+   opacity: 0.1;
+}
+
 /*---- Карта ----*/
 
 .location {
@@ -475,6 +527,39 @@ hr {
    margin-top: auto;
 }
 
+/*---- Форма обратной связи ----*/
+
+.write-us__form {
+   display: flex;
+   flex-wrap: wrap;
+   width: 960px;
+}
+
+.write-us__form-group {
+   width: 360px;
+}
+
+.write-us__form-group_right {
+   margin-left: 40px;
+}
+
+.write-us__input {
+   width: 100%;
+}
+
+.write-us__label {
+   font-weight: bold;
+}
+
+.write-us__textarea {
+   width: 100%;
+}
+
+.write-us__button {
+   border: none;
+   width: 260px;
+}
+
 /*---- Контакты ----*/
 .contacts {
    display: flex;
@@ -496,11 +581,21 @@ hr {
    display: inline-block;
    width: 75px;
    height: 75px;
-   background-color: #eee;
+   background-color: #e1e1e1;
    background-image: url("assets/img/sociall-sprite.png");
    border-radius: 50%;
    padding: 0;
    margin: 0;
+}
+
+.socialss__link:hover {
+   background-color: #e74246;
+}
+
+.socialss__link:active {
+   background-color: #e74246;
+   background-image: url("assets/img/sociall-sprite-opacity.png");
+   
 }
 
 .sociall__link_vk {

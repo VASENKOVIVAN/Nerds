@@ -21,7 +21,7 @@
 				<!-- Логотип -->
 				<a href="#" class="main-nav__logo logo"><img class="logo__img" src="assets/img/nerds-logo.png" alt="Nerds logo" ></a>
 				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item_studio"><a href="#" class="main-nav__link">Студия</a></li>
+					<li class="main-nav__item main-nav__item_studio"><a href="#" class="main-nav__link main-nav__link_active">Студия</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
 					<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
@@ -158,22 +158,22 @@
 				<ul class="clients__list">
 					<li class="clients__item">
 						<a href="#" class="clients__link">
-							<img class="clients__img" src="assets/img/logo-1.png" alt="HTML Academy">
+							<img class="clients__img" src="assets/img/client-1.png" alt="HTML Academy">
 						</a>
 					</li>
 					<li class="clients__item">
 						<a href="#" class="clients__link">
-							<img class="clients__img" src="assets/img/logo-2.png" alt="Borodinski">
+							<img class="clients__img" src="assets/img/client-2.png" alt="Borodinski">
 						</a>
 					</li>
 					<li class="clients__item">
 						<a href="#" class="clients__link">
-							<img class="clients__img" src="assets/img/logo-3.png" alt="Pink">
+							<img class="clients__img" src="assets/img/client-3.png" alt="Pink">
 						</a>
 					</li>
 					<li class="clients__item">
 						<a href="#" class="clients__link">
-							<img class="clients__img" src="assets/img/logo-4.png" alt="Mishka">
+							<img class="clients__img" src="assets/img/client-4.png" alt="Mishka">
 						</a>
 					</li>
 				</ul>
@@ -203,6 +203,28 @@
 			</div>
 		</div>
 		</div>
+	</section>
+	<section class="section write-us">
+		<h2 write-us__header>Напишите нам</h2>
+		<a href="">Закрыть</a>
+		<form class="write-us__form" action="#">
+
+			<div class="write-us__form-group .write-us__form-group_left">
+				<label class="write-us__label" for="name">Ваше имя: </label>
+				<input class="write-us__input" type="text" id="name" name="name" value="Представьтесь, пожалуйста">
+			</div>
+			<div class="write-us__form-group .write-us__form-group_right">
+				<label class="write-us__label" for="email">Ваш e-mail: </label>
+				<input class="write-us__input" type="text" id="email" name="email" value="Для отправки ответа">
+			</div>
+			<div class="write-us__form-group">
+				<label class="write-us__label" for="">
+					Текст письма: 
+				<textarea  class="write-us__textarea"name="text">В свободной форме</textarea>
+				</label>
+			</div>
+			<input  class="write-us__button button button_alert" type="submit" value="Отправить">
+		</form>
 	</section>
 	
 	<!--Контакты-->
