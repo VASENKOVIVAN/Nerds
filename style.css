@@ -1,6 +1,6 @@
-* {
+/* * {
    border: 1px solid black;
-}
+} */
 
 /*--Общие стили--*/
 
@@ -550,7 +550,7 @@ hr {
    display: inline-block;
    position: absolute;
    top: 95px;
-   right: 95px;
+   right: 105px;
    width: 25px;
    height: 25px;
    font-size: 0;
@@ -567,7 +567,7 @@ hr {
 }
 
 .write-us__form {
-   padding: 0 30px;
+   padding: 0 10px;
 }
 
 .write-us__top {
@@ -580,11 +580,14 @@ hr {
    flex-direction: column;
    width: 100%;
    margin-top: 30px;
+   padding: 0 20px;
+   box-sizing: border-box;
 }
 
 .write-us__form-group_side {
-   max-width: 360px;
+   max-width: 400px;
    box-sizing: border-box;
+   padding: 0 20px;
 }
 
 .write-us__input,
@@ -610,6 +613,8 @@ hr {
    width: 260px;
    margin-top: 45px;
    margin-bottom: 10px;
+   margin-left: 20px;
+   border: none;
    cursor: pointer;
 }
 
