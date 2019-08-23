@@ -1,6 +1,6 @@
-/* * {
+* {
    border: 1px solid black;
-} */
+}
 
 /*--Общие стили--*/
 
@@ -529,35 +529,88 @@ hr {
 
 /*---- Форма обратной связи ----*/
 
+.write-us {
+   position: relative;
+   width: 95%;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 80px;
+   box-shadow: 0 15px 40px;
+   box-sizing: border-box;
+}
+
+.write-us__header {
+   margin: 0;
+   margin-bottom: 10px;
+   padding: 0 30px;
+   font-size: 45px;
+}
+
+.write-us__close {
+   display: inline-block;
+   position: absolute;
+   top: 95px;
+   right: 95px;
+   width: 25px;
+   height: 25px;
+   font-size: 0;
+   background: url("assets/img/close.png") no-repeat center;
+   opacity: 0.3;
+}
+
+.write-us__close:hover {
+   opacity: 1;
+}
+
+.write-us__close:active {
+   opacity: 0.1;
+}
+
 .write-us__form {
+   padding: 0 30px;
+}
+
+.write-us__top {
    display: flex;
-   flex-wrap: wrap;
-   width: 960px;
+   justify-content: space-between;
 }
 
 .write-us__form-group {
-   width: 360px;
-}
-
-.write-us__form-group_right {
-   margin-left: 40px;
-}
-
-.write-us__input {
+   display: inline-flex;
+   flex-direction: column;
    width: 100%;
+   margin-top: 30px;
+}
+
+.write-us__form-group_side {
+   max-width: 360px;
+   box-sizing: border-box;
+}
+
+.write-us__input,
+.write-us__textarea {
+   border: 2px solid #d7dcde;
+   border-radius: 3px;
+   padding: 13px 15px;
+   font-size: inherit;
 }
 
 .write-us__label {
    font-weight: bold;
+   margin-bottom: 10px;
 }
 
 .write-us__textarea {
    width: 100%;
+   min-height: 115px;
+   box-sizing: border-box;
 }
 
 .write-us__button {
-   border: none;
    width: 260px;
+   margin-top: 45px;
+   margin-bottom: 10px;
+   cursor: pointer;
 }
 
 /*---- Контакты ----*/
