@@ -525,6 +525,7 @@ hr {
 
 .adress-card__button {
    margin-top: auto;
+   border: none;
 }
 
 /*---- Форма обратной связи ----*/
@@ -534,7 +535,7 @@ hr {
    width: 95%;
    max-width: 960px;
    margin: 0 auto;
-   padding: 80px;
+   padding: 80px 100px;
    box-shadow: 0 15px 40px;
    box-sizing: border-box;
 }
@@ -542,7 +543,6 @@ hr {
 .write-us__header {
    margin: 0;
    margin-bottom: 10px;
-   padding: 0 30px;
    font-size: 45px;
 }
 
@@ -550,12 +550,14 @@ hr {
    display: inline-block;
    position: absolute;
    top: 95px;
-   right: 105px;
+   right: 95px;
    width: 25px;
    height: 25px;
    font-size: 0;
    background: url("assets/img/close.png") no-repeat center;
+   border: none;
    opacity: 0.3;
+   cursor: pointer;
 }
 
 .write-us__close:hover {
@@ -567,7 +569,6 @@ hr {
 }
 
 .write-us__form {
-   padding: 0 10px;
 }
 
 .write-us__top {
@@ -580,14 +581,21 @@ hr {
    flex-direction: column;
    width: 100%;
    margin-top: 30px;
-   padding: 0 20px;
    box-sizing: border-box;
 }
 
 .write-us__form-group_side {
-   max-width: 400px;
+   max-width: 360px;
    box-sizing: border-box;
-   padding: 0 20px;
+}
+
+.write-us__form-group_left {
+   margin-right: 40px;
+}
+
+.write-us__label {
+   font-weight: bold;
+   margin-bottom: 10px;
 }
 
 .write-us__input,
@@ -596,24 +604,31 @@ hr {
    border-radius: 3px;
    padding: 13px 15px;
    font-size: inherit;
+   outline: none;
 }
 
-.write-us__label {
-   font-weight: bold;
-   margin-bottom: 10px;
+.write-us__input:hover,
+.write-us__textarea:hover {
+   border-color: #b4b9bb;
 }
+
+.write-us__input:focus,
+.write-us__textarea:focus {
+   border-color: #000;
+}
+
 
 .write-us__textarea {
    width: 100%;
    min-height: 115px;
    box-sizing: border-box;
+   resize: none;
 }
 
 .write-us__button {
    width: 260px;
    margin-top: 45px;
    margin-bottom: 10px;
-   margin-left: 20px;
    border: none;
    cursor: pointer;
 }
