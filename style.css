@@ -33,7 +33,7 @@
 body {
    margin: 0;
    padding: 0;
-   color: #202020;
+   color: #2b353a;
    font-family: "Roboto", sans-serif;
    font-size: 16px;
 }
@@ -84,6 +84,7 @@ hr {
 
 .main-nav__logo {
    flex-shrink: 0;
+   margin-top: -6px;
 }
 
 .logo__img {
@@ -106,11 +107,12 @@ hr {
    width: 100%;
    list-style-type: none;
    margin: 0;
-   padding: 0 20px;
+   padding-top: 5px;
+   margin-left: 3px;
 }
 
 .main-nav__item {
-   margin-right: 45px;
+   margin-right: 36px;
    display: flex;
    align-items: center;
 }
@@ -120,7 +122,7 @@ hr {
 }
 
 .main-nav__item_basket {
-   margin: 0 0 0 auto;
+   margin: 0 15px 0 auto;
 }
 
 .main-nav__link {
@@ -146,7 +148,7 @@ hr {
 }
 
 .main-nav__link_basket {
-   padding-left: 40px;
+   padding-left: 50px;
    background: url("assets/img/basket.png") no-repeat 10px center;
 }
 
@@ -176,8 +178,8 @@ hr {
    position: absolute;
    display: flex;
    align-items: center;
-   bottom: 90px;
-   left: 47%;
+   bottom: 95px;
+   left: 46.3%;
    z-index: 1;
 
 }
@@ -222,22 +224,22 @@ hr {
 }
 
 .slide {
-   padding: 80px 20px;
-   height: 420px;
+   padding: 73px 20px 78px;
+   min-height: 425px;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
 }
 
 .slide:first-child {
-   background: url("assets/img/slide1.png") no-repeat right bottom;
+   background: url("assets/img/slide1.png") no-repeat 90% bottom;
 }
 
 .slide:nth-child(2) {
-   background: url("assets/img/slide2.png") no-repeat right bottom;
+   background: url("assets/img/slide2.png") no-repeat 90% bottom;
 }
 .slide:last-child {
-   background: url("assets/img/slide3.png") no-repeat right bottom;
+   background: url("assets/img/slide3.png") no-repeat 90% bottom;
 }
 
 .slide__header {
@@ -250,7 +252,7 @@ hr {
 
 .slide__description {
    margin: 0;
-   margin-top: 25px;
+   margin-top: 27px;
    line-height: 24px;
 }
 
@@ -291,7 +293,7 @@ hr {
 /*---Услуги---*/
 
  .services {
-   padding: 80px 0;
+   padding: 60px 0;
 }
 
 .services__list {
@@ -328,7 +330,8 @@ hr {
 
 .services-item__description {
    margin: 0;
-   margin-top: 20px;
+   margin-top: 17px;
+   line-height: 24px;
 }
 
 .services-item__button {
@@ -363,7 +366,7 @@ hr {
 
 .about-us {
    display: flex;
-   padding: 80px 20px;
+   padding: 40px 20px 75px;
    justify-content: space-between;
    align-items: flex-start;
 }
@@ -380,18 +383,19 @@ hr {
    font-size: 45px;
    line-height: 45px;
    margin: 0;
+   margin-top: 30px;
    padding: 0;
 }
 
 .info__p {
    line-height: 24px;
-   margin-top: 25px;
+   margin-top: 35px;
 }
 
 .info__list-header {
    text-transform: uppercase;
    font-weight: 600;
-   margin-top: 45px;
+   margin-top: 40px;
    margin-bottom: 0;
 }
 
@@ -422,7 +426,7 @@ hr {
    text-align: center;
    font-size: 16px;
    line-height: 24px;
-   margin-top: 30px;
+   margin-top: 22px;
 }
 
 .statistics__list {
@@ -451,6 +455,7 @@ hr {
 /*---- Клиенты ----*/
 
 .clients {
+   padding: 30px 0 15px;
 }
 
 .clients__list {
@@ -488,29 +493,27 @@ hr {
 }
 
 .map {
+   position: relative;
    height: 415px;
-   background-image: url(assets/img/map-1.png);
 }
 
-.map__content {
-   position: relative;
-   height: 100%;
-}
 
 /*---- adress card ----*/
 
 .map__adress-card {
    position: absolute;
-   left: 20px;
-   top: 60px;
+   top: 51px;
+   left: 11%;
 }
+
 
 .adress-card {
    width: 320px;
-   height: 300px;
-   padding: 45px 50px;
+   height: 310px;
+   padding: 35px 50px 48px;
    box-sizing: border-box;
    background-color: #fff;
+   color: #666666;
 
    display: flex;
    flex-direction: column;
@@ -518,8 +521,14 @@ hr {
 
 }
 
+.adress-card__title {
+   text-transform: uppercase;
+   font-size: 18px;
+   color: #000;
+}
+
 .adress-card__adress {
-   margin-top: auto;
+   margin-top: 8px;
 }
 
 .adress-card__tel-link {
@@ -534,17 +543,99 @@ hr {
    cursor: pointer;
 }
 
+/*---- Контакты ----*/
+.contacts {
+   display: flex;
+   padding: 70px 20px;
+}
+
+/*---- Социальные кнопки ----*/
+
+.socialss {
+   display: flex;
+}
+
+.socialss__item {
+   font-size: 0px;
+   margin-right: 20px;
+}
+
+.socialss__link {
+   display: inline-block;
+   width: 75px;
+   height: 75px;
+   background-color: #e1e1e1;
+   background-image: url("assets/img/sociall-sprite.png");
+   border-radius: 50%;
+   padding: 0;
+   margin: 0;
+}
+
+.socialss__link:hover {
+   background-color: #e74246;
+}
+
+.socialss__link:active {
+   background-color: #e74246;
+   background-image: url("assets/img/sociall-sprite-opacity.png");
+   
+}
+
+.sociall__link_vk {
+   background-position: 50% 65px;
+}
+
+.sociall__link_fb {
+   background-position: 120% 5px;
+}
+
+.sociall__link_ig {
+   background-position: 80% 123px;
+}
+
+/*---- Promo ----*/
+
+.contacts__promo {
+   margin: 10px auto;
+   display: flex;
+   align-items: center;
+}
+
+.promo {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   line-height: 22px;
+}
+
+.promo__title {
+   font-size: 36px;
+   line-height: 22px;
+   font-weight: bold;
+}
+
+
 /*---- Форма обратной связи ----*/
 
 .write-us {
-   position: relative;
+   position: fixed;
+   top: 10%;
+   width: 100%;
+   z-index: 2;
+}
+
+.wright-us__wrapper {
+   position:  relative;
    width: 95%;
    max-width: 960px;
    margin: 0 auto;
    padding: 80px 100px;
    box-shadow: 0 15px 40px;
    box-sizing: border-box;
+   background-color: #fff;
+   z-index: 10;
 }
+
 
 .write-us__header {
    margin: 0;
@@ -556,7 +647,7 @@ hr {
    display: inline-block;
    position: absolute;
    top: 95px;
-   right: 95px;
+   right: 90px;
    width: 25px;
    height: 25px;
    font-size: 0;
@@ -564,6 +655,7 @@ hr {
    border: none;
    opacity: 0.3;
    cursor: pointer;
+   outline: none;
 }
 
 .write-us__close:hover {
@@ -636,73 +728,6 @@ hr {
    margin-top: 45px;
    margin-bottom: 10px;
    border: none;
+   outline: none;
    cursor: pointer;
-}
-
-/*---- Контакты ----*/
-.contacts {
-   display: flex;
-   padding: 70px 20px;
-}
-
-/*---- Социальные кнопки ----*/
-
-.socialss {
-   display: flex;
-}
-
-.socialss__item {
-   font-size: 0px;
-   margin-right: 10px;
-}
-
-.socialss__link {
-   display: inline-block;
-   width: 75px;
-   height: 75px;
-   background-color: #e1e1e1;
-   background-image: url("assets/img/sociall-sprite.png");
-   border-radius: 50%;
-   padding: 0;
-   margin: 0;
-}
-
-.socialss__link:hover {
-   background-color: #e74246;
-}
-
-.socialss__link:active {
-   background-color: #e74246;
-   background-image: url("assets/img/sociall-sprite-opacity.png");
-   
-}
-
-.sociall__link_vk {
-   background-position: 50% 65px;
-}
-
-.sociall__link_fb {
-   background-position: 120% 5px;
-}
-
-.sociall__link_ig {
-   background-position: 80% 123px;
-}
-
-/*---- Promo ----*/
-
-.contacts__promo {
-   margin: 0 auto;
-}
-
-.promo {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   line-height: 22px;
-}
-
-.promo__title {
-   font-size: 36px;
-   font-weight: bold;
 }

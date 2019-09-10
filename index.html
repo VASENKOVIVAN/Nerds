@@ -45,7 +45,7 @@
 					<ul class="slider__slides">
 						<li class="slider__slide slide slide_active">
 							<h2 class="slide__header">Долго, дорого,<br/>
-								скрупулёзно</h2>
+								скрупулёзно.</h2>
 							<p class="slide__description">Математически выверенный дизайн<br/>
 								для вашего сайта или мобильного приложения</p>
 							<a href="#" class="slide__button button button_alert">Узнать больше</a>
@@ -85,23 +85,25 @@
 				<h2 class="hidden">Наши услуги</h2>
 				<div class="services__list">
 				<div class="services__item services-item">
-					<img class="services-item__img" src="assets/img/posibility1.jpg" alt="icon">
+					<img class="services-item__img" src="assets/img/illustration-1.jpg" alt="illustration">
 					<h3 class="services-item__header">Веб-сайты</h3>
-					<p class="services-item__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<p class="services-item__description">Мир никогда не будет прежним<br/>
+						после того как увидит ваш сайт!</p>
 					<a class="services-item__button button button_alert" href="#">Заказать</a>
 				</div>
 
 				<div class="services__item services-item">
-					<img class="services-item__img" src="assets/img/posibility2.jpg" alt="icon">
+					<img class="services-item__img" src="assets/img/illustration-2.jpg" alt="illustration">
 					<h3 class="services-item__header">Приложения</h3>
-					<p class="services-item__description">Покорите топ-10 прилодений в AppStore и Google Play</p>
+					<p class="services-item__description">Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="services-item__button button button_primary" href="#">Заказать</a>
 				</div>
 
 				<div class="services__item services-item">
-					<img  class="services-item__img"src="assets/img/posibility3.jpg" alt="icon">
+					<img  class="services-item__img" src="assets/img/illustration-3.jpg" alt="illustration">
 					<h3 class="services-item__header">Презентации</h3>
-						<p class="services-item__description">Вы даже не подозреваете, насколько вы изумительны</p>
+						<p class="services-item__description">Вы даже не подозреваете,<br/>
+							насколько вы изумительны!</p>
 						<a class="services-item__button button button_accent" href="#">Заказать</a>
 				
 				</div>
@@ -188,20 +190,23 @@
 	
 	<!--Карта-->
 	<section class="section location">
+		
 		<h2 class="hidden">Где нас искать?</h2>
+		
 		<div class="map">
-		<div class="map__content container">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac88036d75994b408d28bb66288058d7de1ec909554abe1b7b25787b93167bb18&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+			
 			<div class="map__adress-card adress-card">
-				<h3 class="adress-card__title">Nёrds design studio</h3>
-				<adress class="adress-card__adress">191186, Санкт-Петербург, <br/> ул. Б. Конюшенная, д. 19/8</adress>
-				<p class="adress-card__tel">тел: 
-					<a class="adress-card__tel-link" href="tel:+78122757575">
-						+7 (812) 275-75-75
-					</a>
-				</p>
-				<button class="adress-card__button button button_alert">Напишите нам</button>
+					<h3 class="adress-card__title">Nёrds design studio</h3>
+					<adress class="adress-card__adress">191186, Санкт-Петербург, <br/> ул. Б. Конюшенная, д. 19/8</adress>
+					<p class="adress-card__tel">тел: 
+						<a class="adress-card__tel-link" href="tel:+78122757575">
+							+7 (812) 275-75-75
+						</a>
+					</p>
+					<button class="adress-card__button button button_alert" onclick="document.querySelector('.write-us').style.display='block'"">Напишите нам</button>
 			</div>
-		</div>
+			
 		</div>
 	</section>
 	
@@ -225,8 +230,9 @@
 </footer>
 
 <section class="section write-us">
+	<div class="wright-us__wrapper">
 	<h2 class="write-us__header">Напишите нам</h2>
-	<button class="write-us__close" href="#">Закрыть</button>
+	<button class="write-us__close" href="javascript:void(0)" onclick="document.querySelector('.write-us').style.display='none'">Закрыть</button>
 	<form class="write-us__form" action="#">
 		<div class="write-us__top">
 			<div class="write-us__form-group write-us__form-group_side write-us__form-group_left">
@@ -244,8 +250,9 @@
 			</label>
 			<textarea  class="write-us__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
 		</div>
-		<input  class="write-us__button button button_alert" type="submit" value="Отправить">
+		<input  class="write-us__button 	button button_alert" type="submit" value="Отправить">
 	</form>
+	</div>
 </section>
 </body>
 </html>
