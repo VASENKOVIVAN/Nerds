@@ -495,6 +495,7 @@ hr {
 .map {
    position: relative;
    height: 415px;
+   background-image: url(assets/img/map-1.png);
 }
 
 
@@ -503,7 +504,7 @@ hr {
 .map__adress-card {
    position: absolute;
    top: 51px;
-   left: 11%;
+   margin-left: 20px;
 }
 
 
