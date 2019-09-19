@@ -617,7 +617,7 @@ hr {
 .write-us {
    position: fixed;
    display: none;
-   top: 10%;
+   top: 50%;
    width: 100%;
    z-index: 2;
 }
@@ -627,6 +627,7 @@ hr {
    width: 95%;
    max-width: 960px;
    margin: 0 auto;
+   margin-top: -300px;
    padding: 80px 100px;
    box-shadow: 0 15px 40px;
    box-sizing: border-box;
