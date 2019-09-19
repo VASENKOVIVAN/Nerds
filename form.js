@@ -6,9 +6,17 @@ let successMessage = formWrapper.querySelector('.success-message');
 // submitButton.addEventListener('click', function() {
 //    alert('Сообщение отправлено!');
 // });
+ 
 
 form.addEventListener('submit', function() {
    successMessage.classList.remove('hidden');
-   alert('Сообщение отправлено!');
+   setTimeout(function(){
    formSection.style.display = 'none';
+   successMessage.classList.add('hidden');
+},1000)
 });
+
+// function formClose() {
+//    formSection.style.display = 'none';
+//    successMessage.classList.add('hidden');
+// };
