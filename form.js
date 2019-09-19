@@ -13,7 +13,7 @@ form.addEventListener('submit', function() {
    setTimeout(function(){
    formSection.style.display = 'none';
    successMessage.classList.add('hidden');
-},1000)
+},2000)
 });
 
 // function formClose() {
