@@ -231,7 +231,8 @@
 	<div class="wright-us__wrapper">
 	<h2 class="write-us__header">Напишите нам</h2>
 	<button class="write-us__close" href="javascript:void(0)" onclick="document.querySelector('.write-us').style.display='none'">Закрыть</button>
-	<form class="write-us__form" action="#">
+	<form class="write-us__form" action="#" target="myIFR">
+			<iframe name="myIFR" style="display: none"></iframe>
 		<div class="write-us__top">
 			<div class="write-us__form-group write-us__form-group_side write-us__form-group_left">
 				<label class="write-us__label" for="name">Ваше имя: </label>
@@ -250,7 +251,12 @@
 		</div>
 		<input  class="write-us__button 	button button_alert" type="submit" value="Отправить">
 	</form>
+	<p class="write-us__success-message success-message hidden">
+		<span class="success-message__title">Ваше сообщение успешно отправлено!</span><br/>
+		Ответ будет отправлен на указанную почту<br/>в ближайшее время. 
+	</p>
 	</div>
 </section>
+<script src="form.js"></script>
 </body>
 </html>
