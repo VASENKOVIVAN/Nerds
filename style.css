@@ -271,7 +271,6 @@ hr {
 
 .button {
    height: 50px;
-   padding: 0 40px;
    display: inline-flex;
    justify-content: center;
    align-items: center;
@@ -341,6 +340,7 @@ hr {
 }
 
 .services-item__button {
+   padding: 0 40px;
    margin-top: auto;
 }
 
@@ -755,4 +755,57 @@ hr {
    font-size: 40px;
    color: green;
    text-shadow: 0px 2px 1px #e1e1e1;
+}
+
+/*-------- Адаптив --------*/
+
+@media (max-width: 1024px){
+
+   body {
+      font-size: 14px;
+   }
+
+   .button {
+      height: 45px;
+   }
+   
+   .services {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   .services__list{
+      display: block;
+   }
+   
+   .services__item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-width: none;
+      min-height: 176px;
+      padding: 15px 0 15px 333px;
+
+      box-shadow: -72px 89px 0px -86.7px #e5e5e5;
+   }
+
+   .services__item:nth-child(2) {
+      box-shadow: -35px 52.5px 0px -50px #e5e5e5;
+   }
+
+   .services__item:last-child {
+      /* box-shadow: 0px 18px 0px -15px #e5e5e5; */
+      box-shadow: none;
+   }
+
+   .services-item__img {
+      position: absolute;
+      left: 15px;
+      width: 300px;
+   }
+
+   .services-item__header {
+      margin: 0;
+      font-size: 22px;
+   }
 }
