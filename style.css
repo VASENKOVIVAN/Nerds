@@ -169,7 +169,7 @@ hr {
 }
 .slider__slide {
    position: absolute;
-   min-width: 1200px;
+   width: 100%;
    box-sizing: border-box;   
    opacity: 0;
    transition: opacity 1s;
