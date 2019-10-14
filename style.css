@@ -762,7 +762,7 @@ hr {
 @media (max-width: 1024px){
 
    body {
-      font-size: 14px;
+      font-size: 16px;
    }
 
    .button {
@@ -807,5 +807,49 @@ hr {
    .services-item__header {
       margin: 0;
       font-size: 22px;
+   }
+}
+
+@media (max-width: 768px) {
+   body {
+      font-size: 16px;
+   }
+
+   .main-nav {
+      flex-wrap: wrap;
+   }
+
+   .main-nav__list {
+         flex-wrap: wrap;
+   }
+}
+
+@media (max-width: 480px) {
+
+   .services-item__img {
+      position: static;
+      margin-bottom: 17px;
+      width: 100%;
+   }
+
+   .services-item__description {
+      margin-bottom: 17px;
+   }
+
+   .services-item__button {
+      width: 100%;
+   }
+
+   .services__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: stretch;
+      width: 100%;
+   }
+
+   .services__item {
+      width: 95%;
+     padding-left: 0;
+     margin: 0 auto;
    }
 }
