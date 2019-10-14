@@ -768,6 +768,10 @@ hr {
    .button {
       height: 45px;
    }
+
+   .main-nav__logo {
+      margin-right: 8px; /*Можно убрать.*/
+   }
    
    .services {
       padding-top: 30px;
@@ -810,19 +814,64 @@ hr {
    }
 }
 
+
 @media (max-width: 768px) {
    body {
       font-size: 16px;
    }
 
-   .main-nav {
+   /* -- Start -- Для теста. переделать.---- */
+
+   .about-us {
       flex-wrap: wrap;
    }
 
+   .clients__list {
+      flex-wrap: wrap;
+   }
+
+   .contacts {
+      flex-wrap: wrap;
+   }
+
+    /* -- End -- Для теста. переделать.---- */
+
+   .main-nav {
+      flex-wrap: wrap;
+      padding-left: 0;
+   }
+
+   .main-nav__logo {
+      margin: 0 auto;
+   }
+
    .main-nav__list {
-         flex-wrap: wrap;
+      justify-content: space-between;
+      width: 95%;
+      margin: 5px auto;
+   }
+
+   .main-nav__item {
+      margin: 0;
+   }
+
+   .main-nav__item_studio {
+      margin-left: 0;
+   }
+
+   .main-nav__item_basket {
+      margin-left: 0;
+   }
+
+   .main-nav__link {
+      font-size: 90%;
+   }
+
+   .main-nav__link_basket {
+      padding-left: 32px;
    }
 }
+
 
 @media (max-width: 480px) {
 
@@ -849,7 +898,17 @@ hr {
 
    .services__item {
       width: 95%;
-     padding-left: 0;
-     margin: 0 auto;
+      padding-left: 0;
+      margin: 0 auto;
+      box-shadow: none;
+   }
+
+   .services__item:nth-child(2){
+      box-shadow: none;
+   }
+
+   .services__item:not(:last-child) {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e5e5e5;
    }
 }
