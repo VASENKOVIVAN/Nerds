@@ -100,6 +100,48 @@ hr {
    opacity: 0.3;
 }
 
+/* ---- Меню бургер -start- ---- */
+
+.ham {
+   display: none;
+   position: absolute;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+   transition: transform 400ms;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+ .hamRotate.active {
+   transform: rotate(45deg);
+ }
+ .hamRotate180.active {
+   transform: rotate(180deg);
+ }
+ .line {
+   fill:none;
+   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+   stroke:#000;
+   stroke-width:5.5;
+   stroke-linecap:round;
+ }
+ 
+ .ham2 .top {
+   stroke-dasharray: 40 121;
+ }
+ .ham2 .bottom {
+   stroke-dasharray: 40 121;
+ }
+ .ham2.active .top {
+   stroke-dashoffset: -102px;
+ }
+ .ham2.active .bottom {
+   stroke-dashoffset: -102px;
+ }
+
+ /* ---- Меню бургер -end- ---- */
+
 .main-nav__list {
    display: flex;
    justify-content: center;
@@ -762,7 +804,7 @@ hr {
 @media (max-width: 1024px){
 
    body {
-      font-size: 16px;
+      font-size: 14px;
    }
 
    .button {
@@ -816,10 +858,6 @@ hr {
 
 
 @media (max-width: 768px) {
-   body {
-      font-size: 16px;
-   }
-
    /* -- Start -- Для теста. переделать.---- */
 
    .about-us {
@@ -875,6 +913,55 @@ hr {
 
 @media (max-width: 480px) {
 
+   .logo {
+      flex-shrink: 1;
+   }
+
+   .ham {
+      display: block;
+      margin-top: 12px;
+   }
+
+   .main-nav__list {
+      flex-direction: column;
+      width: 80%;
+      position: absolute;
+      top: 115px;
+      left: -85%;
+      z-index: 10;
+
+      font-size: 150%;
+      background-color: #e5e5e5;
+      box-shadow: 0 7px 7px #000;
+      border: 1px solid #eee;
+      padding: 0;
+      
+      transition: transform 01s;
+      -webkit-transition: transform 01s;
+      -moz-transition: transform 01s;
+      -ms-transition: transform 01s;
+      -o-transition: transform 01s;
+   }
+
+   .main-nav__list_active {
+      transform: translateX(108%);
+      -webkit-transform: translateX(108%);
+      -moz-transform: translateX(108%);
+      -ms-transform: translateX(108%);
+      -o-transform: translateX(108%);
+}
+
+   .main-nav__item {
+      width: 100%;
+      margin: 0;
+   }
+
+   .main-nav__link {
+      width: 100%;
+      text-align: center;
+      box-shadow: inset 0 10px 10px #f5f5f5;
+   }
+
    .services-item__img {
       position: static;
       margin-bottom: 17px;
@@ -912,3 +999,4 @@ hr {
       border-bottom: 2px solid #e5e5e5;
    }
 }
+
