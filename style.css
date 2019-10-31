@@ -462,7 +462,8 @@ hr {
    flex-direction: column;
    justify-content: space-between;
    flex-basis: 360px;
-   min-height: 410px;
+   min-height: 30px;
+   max-height: 410px;
 }
 
 .statistics__header {
@@ -472,13 +473,15 @@ hr {
    text-align: center;
    font-size: 16px;
    line-height: 24px;
-   margin-top: 22px;
+   margin-top: 2em;
 }
 
 .statistics__list {
    display: flex;
    justify-content: space-between;
    align-items: space-between;
+   margin-top: 1em;
+   
 }
 
 .statistics__item {
@@ -912,13 +915,19 @@ hr {
 
 
 @media (max-width: 480px) {
-
    body {
       font-size: 14px;
    }
 
-   [class*='header'] {
-      font-size: 25px;
+   .about-us {
+      padding: 40px 20px;
+   }
+
+   .slide__header,
+   .info__header,
+   .promo__title {
+      font-size: 30px;
+      line-height: 100%;
    }
 
    .logo {
@@ -962,12 +971,32 @@ hr {
    .main-nav__item {
       width: 100%;
       margin: 0;
+      border-bottom: 2px solid #dbd8d8;
    }
 
    .main-nav__link {
       width: 100%;
       text-align: center;
-      box-shadow: inset 0 10px 10px #f5f5f5;
+   }
+
+   .slide:first-child {
+      background-size: 70%;
+      background-position: 50% 7%;
+      padding: 48% 20px 10% 20px;
+      transition: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+   }
+
+   .slide__description {
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
+
+   .slider__label {
+      display: none;
    }
 
    .services-item {
@@ -978,6 +1007,10 @@ hr {
       position: static;
       margin-bottom: 17px;
       width: 100%;
+   }
+
+   .services-item__header {
+      font-size: 20px;
    }
 
    .services-item__description {
@@ -1009,6 +1042,27 @@ hr {
    .services__item:not(:last-child) {
       margin-bottom: 20px;
       border-bottom: 2px solid #e5e5e5;
+   }
+
+   .info__list-header {
+      font-size: 18px;
+   }
+
+   .statistics {
+      margin: 30px auto;
+   }
+
+   .statistics__logo {
+      width: 100%;
+      height: auto;
+   }
+
+   .statistics__percent {
+      font-size: 35px;
+   }
+
+   .adress-card {
+      margin-left: 0;
    }
 }
 
