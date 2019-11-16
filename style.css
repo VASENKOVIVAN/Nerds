@@ -164,7 +164,7 @@ hr {
 }
 
 .main-nav__item_basket {
-   margin: 15px 0 auto;
+   margin: 0 15px 0 auto;
 }
 
 .main-nav__link {
@@ -818,9 +818,7 @@ hr {
 
 @media (max-width: 1024px){
 
-   body {
-      font-size: 14px;
-   }
+
 
    .button {
       height: 45px;
@@ -869,14 +867,37 @@ hr {
       margin: 0;
       font-size: 22px;
    }
+
+   
+   .slide__header,
+   .info__header,
+   .promo__title {
+      font-size: 40px;
+      line-height: 100%;
+   }
+}
+
+@media (max-width: 850px) {
+   .about-us {
+      flex-wrap: wrap;
+   } 
+
+   .statistics {
+      margin: 30px auto;
+   }
+
+   .statistics__logo {
+      width: 100%;
+      height: auto;
+   }
 }
 
 
 @media (max-width: 768px) {
    /* -- Start -- Для теста. переделать.---- */
 
-   .about-us {
-      flex-wrap: wrap;
+      body {
+      font-size: 14px;
    }
 
    .clients__list {
@@ -927,6 +948,27 @@ hr {
    .main-nav__link_basket {
       padding-left: 32px;
    }
+
+   .contacts {
+      padding: 35px 20px 40px 20px;
+   }
+
+   .promo {
+      text-align: center;
+   }
+
+   .contacts__socialss {
+      order: 1;
+      margin: 0 auto;
+   }
+
+   .socialss__item {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+   }
 }
 
 
@@ -940,12 +982,6 @@ hr {
       padding: 40px 20px;
    }
 
-   .slide__header,
-   .info__header,
-   .promo__title {
-      font-size: 30px;
-      line-height: 100%;
-   }
 
    .logo {
       flex-shrink: 1;
@@ -1067,16 +1103,7 @@ hr {
 
    .info__list-header {
       font-size: 18px;
-   }
-
-   .statistics {
-      margin: 30px auto;
-   }
-
-   .statistics__logo {
-      width: 100%;
-      height: auto;
-   }
+   } 
 
    .statistics__percent {
       font-size: 35px;
@@ -1094,24 +1121,8 @@ hr {
    }
 
    .contacts {
-      padding: 350px 20px 40px 20px;
+      padding-top: 350px;
    }
 
-   .promo {
-      text-align: center;
-   }
-
-   .contacts__socialss {
-      order: 1;
-      margin: 0 auto;
-   }
-
-   .socialss__item {
-      transform: scale(0.9);
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      -o-transform: scale(0.9);
-}
 }
 
