@@ -821,14 +821,16 @@ hr {
 
 @media (max-width: 1024px){
 
-
-
    .button {
       height: 45px;
    }
 
    .main-nav__logo {
       margin-right: 8px; /*Можно убрать.*/
+   }
+
+   .slider .slide {
+      background-position: 310px center;
    }
    
    .services {
@@ -972,6 +974,10 @@ hr {
    .contacts {
       padding: 350px 20px 40px 20px;
    }
+
+   .location {
+      padding-top: 40px;
+   }
    
    .adress-card {
       position: relative;
@@ -1020,8 +1026,6 @@ hr {
       padding-top: 53px;
       min-height: 100%;
    }
-
-
 }
 
 
