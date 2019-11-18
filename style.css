@@ -618,6 +618,8 @@ hr {
 }
 
 .socialss__item {
+   display: flex;
+   align-items: center;
    font-size: 0px;
    margin-right: 20px;
 }
@@ -674,6 +676,7 @@ hr {
    font-size: 36px;
    line-height: 22px;
    font-weight: bold;
+   text-align: center;
 }
 
 
